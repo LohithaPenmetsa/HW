@@ -37,7 +37,7 @@ jobs:
       #   
       - name: multi-line
         id: read_me
-        uses: andstor/file-reader-action@v3
+        uses: andstor/file-reader-action@v1
         with:
          path: "file1"
          
