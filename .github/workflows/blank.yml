@@ -34,3 +34,13 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+      #   
+      - name: multi-line
+        id: read_me
+        uses: andstor/file-reader-action@v3
+        with:
+         path: "file1"
+         
+      - name: File contents
+        run: echo "${ steps.read_me.outputs.contents }"
+     
